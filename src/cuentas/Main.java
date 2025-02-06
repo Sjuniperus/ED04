@@ -15,11 +15,11 @@ public class Main {
      */
     public static void main(String[] args) {
         
-        operativa_cuenta(2300.0f);
+        operativa_cuenta();
         
     }
 
-    private static void operativa_cuenta (float cantidad){
+    private static void operativa_cuenta (){
      
          CCuenta cuenta1;
         double saldoActual;
@@ -31,13 +31,13 @@ public class Main {
         System.out.println("El saldo actual es"+ saldoActual );
 
         try {
-            cuenta1.retirar(cantidad);
+            cuenta1.retirar(2300);
         } catch (Exception e) {
             System.out.print("Fallo al retirar");
         }
         try {
             System.out.println("Ingreso en cuenta");
-            cuenta1.ingresar(cantidad);
+            cuenta1.ingresar(687);
         } catch (Exception e) {
             System.out.print("Fallo al ingresar");
         }
